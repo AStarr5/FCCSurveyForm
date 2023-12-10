@@ -1,83 +1,71 @@
+
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Code Academy Survey Form</title>
+  <title>Code Academy Survey Form</title>
   <link rel="stylesheet" href="./style.css">
-
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html>
 
-  <header>
-<h1 id="title"> Favorite Variety of Bell Pepper </h1>
-  </header>
+<header>
+  <h1 id="title">Favorite Variety of Bell Pepper</h1>
+</header>
+
+<main>
+  <p id="description">
+    This is a survey aimed at determining the most desirable types and varieties of the delicious and beautiful Bell Pepper.
+    Users may fill out the options below to help us select the most incredible and phenomenal Bell Peppers.
+  </p>
     
-  <body>
-<p id="description"> This is a survey aimed at determining the the most desirable types and varieties of the delicious and beautiful Bell Pepper. <br> Users may fill out the options below in order to help us select the most incredible and phenomenal Bell Peppers.</p>
-    
-<form id="survey-form">
+  <form id="survey-form">
+    <label for="name" id="name-label">Enter Name</label>
+    <input id="name" type="text" name="name" placeholder="Ralph Wiggum" required>
   
-  <label for="name" id="name-label"> Enter Name </label>
-  <input id="name" type="text" name="name" placeholder="Ralph Wiggum" required> </input>
-<br>
+    <label for="email" id="email-label">Enter Email</label>
+    <input id="email" type="email" name="email" placeholder="JohnDoe@email.com" required>
   
-<label for="email" id="email-label"> Enter Email </label>
-<input id="email" type="email" name="email" placeholder="JohnDoe@email.com" required> </imput>
-<br>
-
-<label for="number" id="number-label"> Bell Peppers Eaten</label>
-<input id="number" type="number" name="number" min="0" max="700000" placeholder="437" required></input>
-<br>
-
-<label for="dropdown" id="dropdown-label" id="type"> Select Type </label>
-<select id="dropdown">
-  <option value="Red bell pepper"> Red Bell Pepper</option>
-  <option value="Green bell pepper"> Green Bell Pepper</option>
-  <option value="Yellow bell pepper"> Yellow Bell Pepper</option>
-  <option value="Miscellaneous bell pepper"> Miscellaneous Bell Pepper</option>
-  <br>
-</select>
-<br>
-<label for="pepper_size" id="pepper_size">Size of Pepper: </label>
-
-<input id="pepper_size" type="radio" id="small" name="pepper_size" value="small">
-<label for="small" id="small"> Small </label>
-     <input id="pepper_size"  type="radio"id="pepper_size" name="pepper_size" value="medium">
-     <label for="medium" id="medium"> Medium </label>
-<input id="pepper_size" type="radio" id="large" name="pepper_size" value="large">
-<label for="large" id="large"> Large </label>
-       <br>
-
-<label for="enthusiasm" name="enthusiasm"> <br> How Much Do You Enjoy Bell Peppers? <br> </label>
-<input id="checkbox" type="checkbox" name="enthusiasm" value="A lot">
-<label for="checkbox" id="checkbox" name="enthusiasm"> <b>A lot</b> </label>
-  <br>
-
-  <input id="checkbox" type="checkbox" name="enthusiasm" value="A little bit"> <small>A little bit</small>
-  <label for="checkbox" id="checkbox" name="enthusiasm" </label> <br>
+    <label for="number" id="number-label">Bell Peppers Eaten</label>
+    <input id="number" type="number" name="number" min="0" max="700000" placeholder="437" required>
   
- <input id="checkbox" type="checkbox" name="enthusiasm" value="They are incredible"> <b>They are incredible</b>
-  <label for="checkbox" id="checkbox" name="enthusiasm" </label>
-<br> <br>
+    <label for="dropdown" id="dropdown-label">Select Type</label>
+    <select id="dropdown">
+      <option value="Red bell pepper">Red Bell Pepper</option>
+      <option value="Green bell pepper">Green Bell Pepper</option>
+      <option value="Yellow bell pepper">Yellow Bell Pepper</option>
+      <option value="Miscellaneous bell pepper">Miscellaneous Bell Pepper</option>
+    </select>
+  
+    <fieldset>
+      <legend>Size of Pepper:</legend>
+      <input type="radio" id="small" name="pepper_size" value="small">
+      <label for="small">Small</label>
+  
+      <input type="radio" id="medium" name="pepper_size" value="medium">
+      <label for="medium">Medium</label>
+  
+      <input type="radio" id="large" name="pepper_size" value="large">
+      <label for="large">Large</label>
+    </fieldset>
+  
+    <label for="enthusiasm">How Much Do You Enjoy Bell Peppers?</label>
+    <input type="checkbox" id="enthusiasm-lot" name="enthusiasm" value="A lot">
+    <label for="enthusiasm-lot"><b>A lot</b></label>
+  
+    <input type="checkbox" id="enthusiasm-bit" name="enthusiasm" value="A little bit">
+    <label for="enthusiasm-bit"><small>A little bit</small></label>
+  
+    <input type="checkbox" id="enthusiasm-incredible" name="enthusiasm" value="They are incredible">
+    <label for="enthusiasm-incredible"><b>They are incredible</b></label>
+  
+    <label for="comments">Questions and comments</label>
+    <textarea id="comments" name="comments"></textarea>
+  
+    <input id="submit" type="submit" class="submit" value="Submit Survey">
+  </form>
+</main>
 
-<label id="textarea"> Questions and comments </label>
-<br>
-<textarea id="textarea" name="comments"> </textarea>
-<br>
-<br>
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
 
-<label for="submit"></label>
-<input id="submit" type="submit" color"black" class="submit">
-
-</form>
-
-</body>
-
-</html>
-<!-- partial -->
-  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
 </body>
 </html>
